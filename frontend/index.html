@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#182b46">
+  <title>Papelaria | Demonstração</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="./" aria-label="Início da Papelaria"><span class="brand-mark">✦</span><span>Papelaria<small>Painel de demonstração</small></span></a>
+      <div class="nav-label">TABELAS DO BANCO</div>
+      <nav id="menu" aria-label="Tabelas"></nav>
+      <div class="sidebar-note"><span class="note-dot"></span><div><strong>Modo demonstração</strong><p>Os dados alterados ficam apenas neste navegador.</p></div></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="eyebrow">SISTEMA DA PAPELARIA <span>›</span> <span id="breadcrumb">Produtos</span></div><span class="top-badge">DEMO INTERATIVA</span></header>
+      <section class="hero"><div><p class="kicker">VISÃO GERAL</p><h1 id="page-title">Produtos</h1><p id="page-description"></p></div><button class="primary" id="new-button" type="button">＋ Novo registro</button></section>
+      <section class="stats" aria-label="Resumo"><div class="stat"><span>Registros nesta tabela</span><strong id="count">0</strong></div><div class="stat"><span>Banco de dados</span><strong>papelaria</strong></div><div class="stat"><span>Operações</span><strong>CRUD completo</strong></div></section>
+      <section class="card"><div class="card-header"><div><h2>Registros</h2><p>Consulte, edite ou exclua os dados desta tabela.</p></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar registro" aria-label="Buscar registro"></label></div><div class="table-scroll"><table><thead id="table-head"></thead><tbody id="table-body"></tbody></table></div><div class="table-footer"><span id="result-count"></span><button id="reset-button" class="text-button" type="button">Restaurar dados de exemplo</button></div></section>
+      <p class="footnote">Demonstração em HTML, CSS e JavaScript. O sistema em Python usa o MySQL e o SQL completo do projeto.</p>
+    </main>
+  </div>
+  <dialog id="editor"><form id="record-form"><div class="dialog-head"><div><p class="kicker">CADASTRO</p><h2 id="dialog-title">Novo registro</h2></div><button class="icon-button" id="close-dialog" type="button" aria-label="Fechar">×</button></div><div id="form-fields" class="form-grid"></div><p id="form-error" class="form-error" role="alert"></p><div class="dialog-actions"><button class="secondary" id="cancel-button" type="button">Cancelar</button><button class="primary" type="submit">Salvar registro</button></div></form></dialog>
+  <dialog id="confirm-dialog"><div class="confirm-box"><div class="confirm-icon">!</div><h2>Excluir registro?</h2><p id="confirm-text"></p><div class="dialog-actions"><button class="secondary" id="cancel-delete" type="button">Cancelar</button><button class="danger" id="confirm-delete" type="button">Sim, excluir</button></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
