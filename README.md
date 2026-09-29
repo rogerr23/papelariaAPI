@@ -59,12 +59,4 @@ O projeto roda localmente com o MySQL. Para acessar por um link fora do computad
 
 A pasta `docs/` contém uma demonstração visual pronta para publicar. Ela abre as cinco tabelas, permite buscar e fazer CRUD com dados de exemplo. As alterações ficam salvas **somente no navegador de quem as fez**. Essa versão não se conecta ao MySQL e não compartilha alterações entre pessoas; o sistema Python acima é a versão conectada ao banco.
 
-Para publicar:
-
-1. Crie um repositório no GitHub e envie os arquivos deste projeto.
-2. No repositório, abra **Settings → Pages**.
-3. Em **Build and deployment**, escolha **Deploy from a branch**.
-4. Selecione a branch principal (`main`) e a pasta **`/docs`**; clique em **Save**.
-5. Aguarde o link aparecer na mesma página. O endereço costuma seguir o formato `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`.
-
 Para ver antes de publicar, abra `docs/index.html` no navegador. Depois de publicar, envie o link ao seu amigo para ele explorar as telas. Para disponibilizar o CRUD Python e MySQL pela internet, será preciso hospedar também o programa Python e o banco em serviços apropriados.
